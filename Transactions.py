@@ -40,6 +40,11 @@ def depositMoney():
         sleep(1)
         Menu.displayMenu()
 
+    elif Balance.getBalance() >= 500000:
+        print("Error: You cannot deposit that amount of money. You must deposit between between 0 and 500,000 dollars.")
+        sleep(1)
+        Menu.displayMenu()
+
     else:
         Balance.amountToAdd(depositAmount)
         print("You have successfully deposited ", depositAmount)
