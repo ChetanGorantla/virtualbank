@@ -17,6 +17,8 @@ if(Login.performLogin() == True):
     # Balance.displayBalance(accountNumber=0)
 else:
     print("Please try again.")
-    Login.performLogin()
+    print("You have one try left.")
+    if (Login.performLogin() == True):
+        Menu.displayMenu()
 
 
