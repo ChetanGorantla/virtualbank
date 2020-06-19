@@ -11,7 +11,8 @@ def displayMenu():
           "1. Balance Display\n"
           "2. Deposit Money\n"
           "3. Withdraw Money\n"
-          "4. Interest\n")
+          "4. Interest\n"
+          "5. Exit")
     choice = str(input("Type your choice number. \n"))
 
     if choice == "1":
@@ -28,6 +29,10 @@ def displayMenu():
         Interest.interestCalculation()
         Interest.interestMoney()
         displayMenu()
+
+    elif choice == "5":
+        exit()
+
 
 
 
