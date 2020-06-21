@@ -2,6 +2,7 @@
 import Transactions
 import Balance
 import Interest
+import Loan
 
 def helloMenu():
     print("This is a hello menu module")
@@ -12,7 +13,8 @@ def displayMenu():
           "2. Deposit Money\n"
           "3. Withdraw Money\n"
           "4. Interest\n"
-          "5. Exit")
+          "5. Loans\n"
+          "6. Exit")
     choice = str(input("Type your choice number. \n"))
 
     if choice == "1":
@@ -31,6 +33,9 @@ def displayMenu():
         displayMenu()
 
     elif choice == "5":
+        Loan.performLoan()
+
+    elif choice == "6":
         exit()
 
 
