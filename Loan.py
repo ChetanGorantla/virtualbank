@@ -3,8 +3,7 @@ import Menu
 
 def loanMoney():
 
-    loanTimes = 0
-    if loanTimes == 0:
+
         loanCreate = str(input("Would you like to take out a loan?"))
 
         if loanCreate in("y", "yes", "Yes"):
@@ -43,7 +42,8 @@ def performLoan():
         punishments = str(input("If you did not give the money back we will take that item away that you used that money with.(example: you buy a car with money that you borrowed from us and then you do not give the money back then we will take your car away."))
         punishment = str(input("Or we will decide to give you another loan with more cost to pay."))
     else:
-        print("Ok, what loan would you like to take?")
+        typeOfLoan = str(input("Ok, what loan would you like to take? "))
+        print("Okay, you are taking out a ", typeOfLoan, " loan.")
         loanMoney()
 
 
