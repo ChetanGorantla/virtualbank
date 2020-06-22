@@ -1,3 +1,5 @@
+import random
+
 def helloLogin():
     print("This is a hello login module.")
 
@@ -9,11 +11,13 @@ def performLogin():
     if bank_id == "" or pin == "":
         print("Sorry, you did not enter the id or pin")
         performLogin()
-    robo_id_value = "97531qetuo"
 
-    print(robo_id_value)
-    robo_id = str(input("Please enter what you see above so we know that you are not a robot"))
-    if robo_id == robo_id_value:
+    i = random.randint(1000,4000)
+    print(i)
+
+
+    robo_id = int(input("Please enter what you see above so we know that you are not a robot"))
+    if robo_id == i:
         print("\n")
 
     else:
