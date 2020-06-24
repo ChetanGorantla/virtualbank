@@ -12,7 +12,6 @@ def performAccountaccess():
     if passcode == "" or phone_number == "" or access_settings_pin == "":
         print("Sorry you did not enter the passcode, phone number or the access settings.")
 
-
     elif passcode == "987654321" and  phone_number == "123-456-789" and  access_settings_pin == "987-654-321":
 
         print("Thank you, you have entered the information correctly.")
@@ -21,5 +20,4 @@ def performAccountaccess():
 
     else:
         print("You have entered the incorrect information please try again.")
-
         return False
