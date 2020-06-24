@@ -52,5 +52,38 @@ def depositMoney():
         sleep(1)
         Menu.displayMenu()
 
+def donateMoney():
+    donateAmount = int(input("How much money would you like to donate?"))
+    if donateAmount > 0 and donateAmount < 500000:
+
+        place1 = "Covid-19 Relief"
+        place2 = "Pennies for the Poor"
+        place3 = "Cancer Research Center"
+
+        donatePlace = str(input("What charity would you like to donate to?\n"
+                                "1. Covid-19 Relief\n"
+                                "2. Pennies for the Poor\n"
+                                "3. Cancer Research Center\n"))
+        if donatePlace == "1":
+            print("You have successfully donated $ ", donateAmount," to ", place1, " charity.")
+            Menu.displayMenu()
+
+        elif donatePlace == "2":
+            print("You have successfully donated $ ", donateAmount," to ", place2, " charity.")
+            Menu.displayMenu()
+
+        elif donatePlace == "3":
+            print("You have successfully donated $ ", donateAmount," to ", place3, " charity.")
+            Menu.displayMenu()
+
+        else:
+            print("Please enter an available charity to donate to!")
+            donateMoney()
+
+    else:
+        print("You cannot donate that amount of money. Please try again within the range of $0-$500,000.")
+        donateMoney()
+
+
 
 
