@@ -55,29 +55,35 @@ def depositMoney():
 def donateMoney():
     donateAmount = int(input("How much money would you like to donate?"))
     if donateAmount > 0 and donateAmount < 500000:
+        if donateAmount <= Balance.getBalance():
+            place1 = "Covid-19 Relief"
+            place2 = "Pennies for the Poor"
+            place3 = "Cancer Research Center"
 
-        place1 = "Covid-19 Relief"
-        place2 = "Pennies for the Poor"
-        place3 = "Cancer Research Center"
+            donatePlace = str(input("What charity would you like to donate to?\n"
+                                    "1. Covid-19 Relief\n"
+                                    "2. Pennies for the Poor\n"
+                                    "3. Cancer Research Center\n"))
+            if donatePlace == "1":
+                Balance.amountToDeduct(donateAmount)
+                print("You have successfully donated $ ", donateAmount," to ", place1, " charity.")
+                Menu.displayMenu()
 
-        donatePlace = str(input("What charity would you like to donate to?\n"
-                                "1. Covid-19 Relief\n"
-                                "2. Pennies for the Poor\n"
-                                "3. Cancer Research Center\n"))
-        if donatePlace == "1":
-            print("You have successfully donated $ ", donateAmount," to ", place1, " charity.")
-            Menu.displayMenu()
+            elif donatePlace == "2":
+                Balance.amountToDeduct(donateAmount)
+                print("You have successfully donated $ ", donateAmount," to ", place2, " charity.")
+                Menu.displayMenu()
 
-        elif donatePlace == "2":
-            print("You have successfully donated $ ", donateAmount," to ", place2, " charity.")
-            Menu.displayMenu()
+            elif donatePlace == "3":
+                Balance.amountToDeduct(donateAmount)
+                print("You have successfully donated $ ", donateAmount," to ", place3, " charity.")
+                Menu.displayMenu()
 
-        elif donatePlace == "3":
-            print("You have successfully donated $ ", donateAmount," to ", place3, " charity.")
-            Menu.displayMenu()
-
+            else:
+                print("Please enter an available charity to donate to!")
+                donateMoney()
         else:
-            print("Please enter an available charity to donate to!")
+            print("You do not have enough money in your account to donate. You have $", Balance.getBalance(), " but you want to donate $", donateAmount)
             donateMoney()
 
     else:
