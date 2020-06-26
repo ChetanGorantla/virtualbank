@@ -4,6 +4,9 @@ import Balance
 import Interest
 import Loan
 import StockMarket
+import ATM
+import Insurance
+
 
 def helloMenu():
     print("This is a hello menu module")
@@ -17,7 +20,9 @@ def displayMenu():
           "5. Loans\n"
           "6. Donate Money\n"
           "7. Stocks\n"
-          "8. Exit")
+          "8. ATM\n"
+          "9. Insurance\n"
+          "0. Exit")
     choice = str(input("Type your choice number. \n"))
 
     if choice == "1":
@@ -45,6 +50,12 @@ def displayMenu():
         StockMarket.buyStock()
 
     elif choice == "8":
+        ATM.atmSecurity()
+
+    elif choice == "9":
+        Insurance.helloInsurance()
+
+    elif choice == "0":
         exit()
 
     else:

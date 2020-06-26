@@ -12,7 +12,7 @@ from pygame import mixer
 
 print("welcome")
 
-if(Login.performLogin() == True):
+if (Login.performLogin() == True):
     Menu.displayMenu()
     # Balance.displayBalance(accountNumber=0)
 else:

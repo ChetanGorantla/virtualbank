@@ -1,0 +1,2 @@
+def helloInsurance():
+    print("Hello")
