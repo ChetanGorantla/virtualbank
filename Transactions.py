@@ -3,6 +3,8 @@
 import Balance
 from time import sleep
 import Menu
+import pygame
+from pygame import mixer
 
 def helloTransaction():
     print("This is a hello transaction module.")
@@ -29,6 +31,9 @@ def withdrawMoney():
         Balance.amountToDeduct(withdrawAmount)
         print("You have successfully withdrew $", withdrawAmount)
         print("Your new balance is ", Balance.getBalance())
+        pygame.mixer.init()
+        pygame.mixer.music.load("ChaChing1.mp3")
+        pygame.mixer.music.play()
         sleep(1)
         Menu.displayMenu()
 
@@ -49,6 +54,9 @@ def depositMoney():
         Balance.amountToAdd(depositAmount)
         print("You have successfully deposited ", depositAmount)
         print("Your new balance is ", Balance.getBalance())
+        pygame.mixer.init()
+        pygame.mixer.music.load("ChaChing1.mp3")
+        pygame.mixer.music.play()
         sleep(1)
         Menu.displayMenu()
 
