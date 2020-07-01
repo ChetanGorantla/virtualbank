@@ -17,5 +17,3 @@ def card():
         if debitCardAmount < Balance.getBalance() and debitCardAmount > 0:
             print("You now have a Debit Card with $", debitCardAmount, " in it.")
 
-def getCreditCardAmount():
-    return 
