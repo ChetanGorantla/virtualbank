@@ -1,8 +1,7 @@
 import Balance
 import Menu
 import Login
-import pygame
-from pygame import mixer
+
 
 def atmSecurity():
     print("Before you use the ATM, you need to enter your bank id and pin. ")
@@ -47,9 +46,7 @@ def atmTransaction():
         if atmWithdrawMoney <= Balance.getBalance() and atmWithdrawMoney > 0:
             Balance.amountToDeduct(atmWithdrawMoney)
             print("You have successfully withdrew $", atmWithdrawMoney)
-            pygame.mixer.init()
-            pygame.mixer.music.load("ChaChing1.mp3")
-            pygame.mixer.music.play()
+
 
             Menu.displayMenu()
         else:
@@ -61,9 +58,7 @@ def atmTransaction():
         if atmDepositMoney <= 500000 and atmDepositMoney > 0:
             Balance.amountToAdd(atmDepositMoney)
             print("You have successfully deposited $", atmDepositMoney)
-            pygame.mixer.init()
-            pygame.mixer.music.load("ChaChing1.mp3")
-            pygame.mixer.music.play()
+
 
             Menu.displayMenu()
         else:

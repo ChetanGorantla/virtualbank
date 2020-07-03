@@ -6,6 +6,8 @@ import Loan
 import StockMarket
 import ATM
 import Insurance
+import RecentTransactions
+import Shop
 
 
 def helloMenu():
@@ -22,6 +24,8 @@ def displayMenu():
           "7. Stocks\n"
           "8. ATM\n"
           "9. Insurance\n"
+          "10. Recent Transactions\n"
+          "11. Shop\n"
           "0. Exit")
     choice = str(input("Type your choice number. \n"))
 
@@ -54,6 +58,12 @@ def displayMenu():
 
     elif choice == "9":
         Insurance.helloInsurance()
+
+    elif choice == "10":
+        RecentTransactions.display()
+
+    elif choice == "11":
+        Shop.startShop()
 
     elif choice == "0":
         exit()
