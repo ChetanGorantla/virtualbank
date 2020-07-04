@@ -51,7 +51,7 @@ def displayMenu():
         Transactions.donateMoney()
 
     elif choice == "7":
-        StockMarket.buyStock()
+        StockMarket.options()
 
     elif choice == "8":
         ATM.atmSecurity()
