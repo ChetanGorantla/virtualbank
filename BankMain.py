@@ -3,12 +3,8 @@ import Login
 import Menu
 import Balance
 import Transactions
-import pygame
-from pygame import mixer
 
-# pygame.mixer.init()
-# pygame.mixer.music.load("TheSea.mp3")
-# pygame.mixer.music.play()
+
 
 print("welcome")
 
