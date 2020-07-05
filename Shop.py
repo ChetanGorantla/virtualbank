@@ -78,3 +78,6 @@ def startShop():
                 else:
                     print("Ok, that's fine.")
                     startShop()
+    else:
+        print("Ok. Have a nice day!")
+        Menu.displayMenu()

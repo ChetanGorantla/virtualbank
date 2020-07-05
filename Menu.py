@@ -57,7 +57,7 @@ def displayMenu():
         ATM.atmSecurity()
 
     elif choice == "9":
-        Insurance.helloInsurance()
+        Insurance.insuranceType()
 
     elif choice == "10":
         RecentTransactions.display()
@@ -66,15 +66,9 @@ def displayMenu():
         Shop.startShop()
 
     elif choice == "0":
+        print("Goodbye...")
         exit()
 
     else:
         print("Please enter a valid thing to do.")
         displayMenu()
-
-
-
-
-
-
-

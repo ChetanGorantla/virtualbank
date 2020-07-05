@@ -56,6 +56,7 @@ def depositMoney():
         Menu.displayMenu()
 
 def donateMoney():
+    global donateAmount
     donateAmount = int(input("How much money would you like to donate?"))
     if donateAmount > 0 and donateAmount < 500000:
         if donateAmount <= Balance.getBalance():
@@ -92,7 +93,3 @@ def donateMoney():
     else:
         print("You cannot donate that amount of money. Please try again within the range of $0-$500,000.")
         donateMoney()
-
-
-
-

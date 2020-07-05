@@ -15,7 +15,7 @@ def display():
               "\nWithdrew $",c,
               "\nDeposited $",d)
         go_back = str(input("Would you like to go back to menu or exit?"))
-        if go_back == "go back" or go_back == "back":
+        if go_back == "go back" or go_back == "back" or go_back == "menu":
             Menu.displayMenu()
         else:
             exit()
