@@ -8,10 +8,21 @@ import ATM
 import Insurance
 import RecentTransactions
 import Shop
+from time import sleep
 
 
 def helloMenu():
     print("This is a hello menu module")
+
+def displayMenu():
+    anwser =str(input("would you like to see the main menu?"))
+    if anwser == "yes":
+        print('ok entering...')
+        sleep(1)
+    else:
+       print("exiting...")
+       sleep(1)
+       exit()
 
 def displayMenu():
     print("Menu:\n"

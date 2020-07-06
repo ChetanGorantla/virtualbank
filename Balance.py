@@ -1,21 +1,16 @@
-# Balance.py
+from time import sleep
 import Interest
-
 import Transactions
-
+import Menu
 def helloBalance():
     print("This is a hello balance module.")
-
 global balance
-balance = 100000
-
+balance = 10000
 def displayBalance(accountNumber):
 
     print("Your account number is: ", accountNumber)
     print("Your account balance is: ", balance)
-
-
-
+    sleep(300)
 def getBalance():
     return balance
 
@@ -32,3 +27,4 @@ def amountToDeduct(amount):
     global balance
     balance = balance - amount
 
+print('hello, welcome starting initial security...')
