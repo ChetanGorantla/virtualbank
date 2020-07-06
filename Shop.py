@@ -15,8 +15,8 @@ def startShop():
                                 "2. Hats\n"
                                 "3. T-Shirts\n"))
             if choice1 == "1":
-                buy11 = str(input("This is $20. Would you still like to buy it?"))
-                if buy11 == "yes":
+                buy = str(input("This is $20. Would you still like to buy it?"))
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(20)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -25,8 +25,8 @@ def startShop():
                     startShop()
 
             if choice1 == "2":
-                buy12 = str(input("This is $7. Would you still like to buy it?"))
-                if buy12 == "yes":
+                buy = str(input("This is $7. Would you still like to buy it?"))
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(7)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -35,9 +35,9 @@ def startShop():
                     startShop()
 
             if choice1 == "3":
-                buy13 = str(input("This is $15. Would you still like to buy it?"))
+                buy = str(input("This is $15. Would you still like to buy it?"))
                 Balance.amountToDeduct(15)
-                if buy13 == "yes":
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
                 else:
@@ -49,8 +49,8 @@ def startShop():
             color = str(input("What color Piggy Bank would you like to buy? We have blue, red, and green."))
             if color == "blue":
 
-                buy21 = str(input("This is $10. Would you still like to buy it?"))
-                if buy21 == "yes":
+                buy = str(input("This is $10. Would you still like to buy it?"))
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(10)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -60,8 +60,8 @@ def startShop():
 
             if color == "red":
 
-                buy22 = str(input("This is $10. Would you still like to buy it?"))
-                if buy22 == "yes":
+                buy = str(input("This is $10. Would you still like to buy it?"))
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(10)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -71,8 +71,8 @@ def startShop():
 
             if color == "green":
 
-                buy23 = str(input("This is $10. Would you still like to buy it?"))
-                if buy23 == "yes":
+                buy = str(input("This is $10. Would you still like to buy it?"))
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(10)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -85,7 +85,7 @@ def startShop():
             if texture == "1":
                 price = 10
                 buy = str(input("This is $"+ str(price) +" Would you still like to buy it?"))
-                if buy == "yes":
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(price)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -97,7 +97,7 @@ def startShop():
                 price = 15
                 buy = str(input("This is $" + str(price) + " Would you still like to buy it?"))
 
-                if buy == "yes":
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(15)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
@@ -108,7 +108,7 @@ def startShop():
             if texture == "3":
                 price = 20
                 buy = str(input("This is $" + str(price) + " Would you still like to buy it?"))
-                if buy == "yes":
+                if buy == "yes" or buy == "y" or buy == "Yes" or buy == "Y":
                     Balance.amountToDeduct(10)
                     print("You have successfully bought this product. Thank you and have a nice day.")
                     Menu.displayMenu()
